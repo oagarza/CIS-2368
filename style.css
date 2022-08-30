@@ -9,3 +9,26 @@ p {
 img {
     max-width: 100%;
 }
+
+.column {
+    display: inline-block
+}
+
+.col1 {
+    background: aqua;
+}
+
+.col2 {
+    border: 5px solid black;
+}
+
+.col1 h1 {
+    color: white;
+}
+
+@media screen and (max-width: 767px){
+    .column{
+        display: block;
+        width: 100%;
+    }
+}
