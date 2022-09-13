@@ -67,6 +67,19 @@ img {
         width: 100%;
     }
 }
+
+.nav-items li, .inline-block{
+    display:inline-block;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item li:hover{
+    background-color: blueviolet;
+}
 button {
     --glow-color: rgb(217, 176, 255);
     --glow-spread-color: rgba(191, 123, 255, 0.781);
