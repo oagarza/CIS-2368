@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: black;
     color: white;
@@ -11,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url();
+    background-image: url(header.png);
     background-size: cover;
     background-position: center;
 }
@@ -38,7 +41,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -48,7 +51,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: blue;
+    background: red;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -70,7 +73,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: blue;
+    color: red;
 }
 /* -- About Me -- */
 #about{
@@ -120,7 +123,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: blue;
+    background: red;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -137,6 +140,49 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: blue;
+    color: red;
     font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+/*--Pictures--*/
+#Pictures{
+    padding: 50px 0;
+}
+
+.picture-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.images{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.images img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.images{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.images img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
 }
